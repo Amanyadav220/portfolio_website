@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="resume_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg">
+        <header>
+            <nav>
+                <ul>
+                    <li class="logo"><img src="https://www.seoclerk.com/pics/677755-210axC1562182518.jpg" width="100"
+                            height="50"></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <h1>About Me <span class="material-symbols-outlined">
+                whatshot
+                </span></h1>
+            <p>🌟 Welcome to My Creative Universe! 🌟
+
+                <br>
+            <div class="typing-animation">Hello there! I'm <b>Aman Yadav</b>.</div>
+            I'm thrilled to invite you into my world of creativity and
+            innovation. This portfolio is a window into my passion, skills, and the incredible projects I've had the
+            privilege to be a part of.
+
+            I believe that every pixel, every line of code, and every stroke of the brush has the power to tell a
+            unique
+            story. With a boundless enthusiasm for design and a knack for turning ideas into reality, I've dedicated
+            myself to crafting exceptional experiences that leave a lasting impact.
+
+            </p>
+            <hr>
+        </section>
+
+        <section id="portfolio">
+            <h1>Portfolio <span class="material-symbols-outlined">
+                history_edu
+                </span></h1>
+            <div class="project">
+                <h2>Project 1</h2>
+                <p>Login System using php and Bootstrap.</p>
+                <a href="https://github.com/Amanyadav220/login-system-using-php-and-bootstrap">View Project</a>
+            </div>
+            <div class="project">
+                <h2>Project 2</h2>
+                <p>Food-delivery-website</p>
+                <a href="https://github.com/Amanyadav220/food-delivery-website">View Project</a>
+            </div>
+            <div class="project">
+                <h2>Project 3</h2>
+                <p>Calculator app</p>
+                <a href="https://github.com/Amanyadav220/calculator-using-html-css-and-javascript">View Project</a>
+            </div>
+            <hr>
+            <!-- Add more project divs as needed -->
+        </section>
+        <div class="resume2">
+            <h2>Download Resume <span class="material-symbols-outlined">
+                download
+                </span></h2>
+            
+
+        </div>
+
+        <div class="resume">
+            <a href="data/resume 29 july 2023.pdf" download class="download-button">Download PDF</a>
+        </div>
+        <br>
+        <hr>
+        <section id="contact">
+            <div class="contacts">
+                <h1>Get in Touch: <span class="material-symbols-outlined">
+                    call
+                    </span></h1><br>
+                <P>You can reach me via email or find me on social network.
+                </P>
+                <p>I would love to hear from you!</p>
+                <p>📧 Email: <b>amanyadav220303@gmail.com</b><br>
+                    📱 Connect with me on LinkedIn:<b> www.linkedin.com/in/aman-yadav-61919b22a</b> <br>
+                </p>
+                <div class="image-row">
+                    <a href="https://twitter.com/AmanYad89747957"><img
+                            src="https://pngmind.com/wp-content/uploads/2019/08/Twitter-Logo-Png-Transparent-Background.jpg"
+                            alt="Image 1"></a>
+                    <a href="https://github.com/Amanyadav220"><img
+                            src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="Image 2"></a>
+                    <a href="www.linkedin.com/in/aman-yadav-61919b22a"><img
+                            src="https://th.bing.com/th/id/R.d51da72e1f4675ba5aef9c956ed4c562?rik=FmeldpqK57Pqdw&riu=http%3a%2f%2fwww.freepnglogos.com%2fuploads%2fofficial-linkedin-logo----17.png&ehk=D2%2b5urO8gseetYQhxdSGq2qyTRbSvoavbbmoGEuOepo%3d&risl=&pid=ImgRaw&r=0"
+                            alt="Image 3"></a>
+                </div>
+                <br>
+                <b>Copyright &copy; 2023</b>
+            </div>
+        </section>
+    </div>
+    <button id="topButton"><span class="material-symbols-outlined">
+        expand_less
+        </span></button>
+
+    <!-- Your content goes here -->
+
+    <script>
+        const topButton = document.getElementById('topButton');
+
+        // Show the button when user scrolls down
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                topButton.style.display = 'block';
+            } else {
+                topButton.style.display = 'none';
+            }
+        });
+
+        // Scroll to the top when the button is clicked
+        topButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Smooth scrolling animation
+            });
+        });
+    </script>
+</body>
+<script>
+    // Disable right-click context menu
+    window.addEventListener('contextmenu', function (ea) {
+        ea.preventDefault();
+    });
+    // Toggle dark mode
+    document.getElementById('darkModeToggle').addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+
+    // Check user preference from local storage
+    const darkModePreference = localStorage.getItem('darkMode');
+    if (darkModePreference === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+
+</script>
+
+</html>
