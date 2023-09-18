@@ -1,0 +1,218 @@
+body,
+    h1,
+    h2,
+    p,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        background-color: #ffffff;
+  color: #000000;
+    }
+    header {
+        background-color: hsl(55, 95%, 49%);
+        color: white;
+        padding: 20px;
+        border: 2px solid rgb(247, 78, 78);
+        height: 40px;
+        border-radius: 11px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    nav li {
+        margin-right: 100px;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 30px;
+    }
+
+    section {
+        padding: 40px;
+        /* border: 2px solid red; */
+    }
+
+    .project {
+        border: 1px solid #fefbfb;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        margin-top: 12px;
+        background-color: #e0e7f8;
+    }
+
+    .project:hover {
+        font-size: large;
+        font-family: 'lora', sans-serif;;
+        /* font-weight: bold; */
+        /* font-style: italic; */
+        /* background-color: rgb(228, 247, 131); */
+    }
+
+    .resume {
+        border: 2px solid rgb(228, 222, 222);
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 12px;
+    }
+
+    .resume:hover {
+        background-color: rgb(199, 247, 247);
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+
+    }
+
+    .resume2 {
+        /* border: 2px solid rgb(228, 222, 222); */
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0px;
+    }
+
+    .bg {
+        width: 100%;
+        height: 170vh;
+        background-size: 300% 300%;
+        background-image: linear-gradient(-45deg, yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
+        -webkit-animation: AnimateBG 20s ease infinite;
+        animation: AnimateBG 20s ease infinite;
+    }
+
+    @-webkit-keyframes AnimateBG {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @keyframes AnimateBG {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Example CSS */
+    .download-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #83c5f1;
+        color: rgb(242, 72, 72);
+        text-decoration: none;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+
+    .logo img {
+        position: relative;
+        top: -11px;
+        border-radius: 50%;
+        border: 1px solid #be7878;
+    }
+
+    #contact {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        /* background-image: url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'); */
+        height: 90px;
+        /* width: 150px; */
+        background-size:70%;
+        /* Scale the image to cover the entire section */
+        background-repeat: no-repeat;
+        /* Prevent image repetition */
+        background-position: center center;
+        /* Center the image horizontally and vertically */
+        padding: 100px;
+        /* background-color: yellow; */
+    }
+    .contacts{
+        border: 3px solid rgb(252, 252, 249);
+        background-color: #e0e7f8;
+        /* opacity: 0.9; */
+        border-radius: 12px;
+        padding: 30px;
+        margin-top: 60px;
+    }
+    .image-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid rgb(244, 248, 5); */
+        margin-top: 62px;
+        /* border-style:dotted; */
+    }
+    
+    .image-row img {
+        width: 40px; /* Set your desired image width */
+        height: auto;
+        margin: 0 50px;
+        border-radius:5px; /* Adjust the spacing between images */
+    }
+    .typing-animation {
+        overflow: hidden;
+        border-right: .15em solid orange; /* Cursor effect */
+        white-space: nowrap; /* Prevent text from wrapping */
+        font-size: 21px;
+        animation: typing 4s steps(40) infinite, blink-caret .75s step-end infinite;
+        color: #d60451;
+        /* border: 2px solid; */
+        padding-left: 390px;
+      }
+    
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 40%; }
+      }
+    
+      @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: orange; }
+      }
+      #topButton {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 16px;
+        background-color: #555;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 4px;
+      }
+      body.dark-mode {
+        background-color: #000000;
+        color: #ffffff;
+      }
